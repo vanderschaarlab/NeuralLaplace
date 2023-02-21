@@ -3,8 +3,6 @@ name: Sphinx build
 on:
   push:
     branches: [main, release]
-  pull_request:
-    types: [opened, synchronize, reopened]
 
 
 jobs:
