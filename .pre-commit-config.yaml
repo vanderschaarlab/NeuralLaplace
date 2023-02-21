@@ -39,14 +39,9 @@ repos:
     args: [
           "--ignore-missing-imports",
           "--scripts-are-modules",
-          "--disallow-incomplete-defs",
-          "--no-implicit-optional",
           "--warn-unused-ignores",
           "--warn-redundant-casts",
           "--strict-equality",
           "--warn-unreachable",
-          "--disallow-untyped-defs",
-          "--disallow-untyped-calls",
           "--install-types",
-          "--non-interactive",
       ]

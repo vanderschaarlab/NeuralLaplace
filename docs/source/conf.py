@@ -1,12 +1,22 @@
 # Configuration file for the Sphinx documentation builder.
 
 # -- Project information
-import torchlaplace
-project = 'TorchLaplace'
-copyright = '2021, Sam Holt'
-author = 'Sam Holt'
+import datetime
+import sys
+import os
 
-version = torchlaplace.__version__
+sys.path.insert(0, os.path.abspath("../../"))
+
+from torchlaplace import __version__
+
+now = datetime.datetime.now()
+
+
+project = 'TorchLaplace'
+author = 'Sam Holt'
+copyright = f'{now.year}, {author}'
+
+version = __version__
 release = version
 
 # -- General configuration
